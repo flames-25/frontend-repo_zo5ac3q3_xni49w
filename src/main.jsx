@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 
 import Home from './pages/Home'
 import Projecten from './pages/Projecten'
+import ProjectDetail from './pages/ProjectDetail'
 import Bureau from './pages/Bureau'
 import Nieuws from './pages/Nieuws'
 import Contact from './pages/Contact'
@@ -20,6 +21,7 @@ function AppShell() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projecten" element={<Projecten />} />
+        <Route path="/projecten/:slug" element={<ProjectDetail />} />
         <Route path="/bureau" element={<Bureau />} />
         <Route path="/nieuws" element={<Nieuws />} />
         <Route path="/contact" element={<Contact />} />
